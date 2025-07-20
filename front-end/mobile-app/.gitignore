@@ -35,3 +35,6 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+# Xcode UI State
+ios/mobileapp.xcworkspace/xcuserdata/ken.sawada.xcuserdatad/UserInterfaceState.xcuserstate
