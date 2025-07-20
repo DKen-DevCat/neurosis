@@ -1,0 +1,56 @@
+name: Frontend Mobile App CI
+
+on:
+  push:
+    branches:
+      - develop
+      - main
+    paths:
+      - 'front-end/mobile-app/**'
+  pull_request:
+    branches:
+      - develop
+      - main
+    paths:
+      - 'front-end/mobile-app/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20' # プロジェクトのNode.jsバージョンに合わせて変更
+
+    - name: Cache Node.js modules
+      uses: actions/cache@v4
+      with:
+        path: front-end/mobile-app/node_modules
+        key: ${{ runner.os }}-node-${{ hashFiles('front-end/mobile-app/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - name: Install dependencies
+      run: npm ci
+      working-directory: front-end/mobile-app
+
+    - name: Run lint (Placeholder)
+      run: echo "Linting will be configured here."
+      working-directory: front-end/mobile-app
+
+    - name: Run TypeScript type check
+      run: npx tsc --noEmit
+      working-directory: front-end/mobile-app
+
+    - name: Run tests (Placeholder)
+      run: echo "Tests will be configured here."
+      working-directory: front-end/mobile-app
+
+    - name: Install EAS CLI
+      run: npm install -g eas-cli
+      working-directory: front-end/mobile-app
