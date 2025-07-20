@@ -24,7 +24,7 @@
       "edgeToEdgeEnabled": true,
       "package": "com.anonymous.mobileapp"
     },
-      "web": {
+    "web": {
       "favicon": "./assets/favicon.png",
       "bundler": "metro"
     }

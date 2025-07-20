@@ -26,8 +26,6 @@
     "React-timing": [],
     "React-cxxreact": [],
     "React-perflogger": [],
-    "RCT-Folly": [
-      "2024.11.18.00"
-    ]
+    "RCT-Folly": ["2024.11.18.00"]
   }
 }
