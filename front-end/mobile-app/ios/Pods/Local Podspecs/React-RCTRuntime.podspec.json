@@ -24,9 +24,7 @@
   },
   "dependencies": {
     "React-Core": [],
-    "RCT-Folly/Fabric": [
-      "2024.11.18.00"
-    ],
+    "RCT-Folly/Fabric": ["2024.11.18.00"],
     "glog": [],
     "React-jsi": [],
     "React-jsitooling": [],
