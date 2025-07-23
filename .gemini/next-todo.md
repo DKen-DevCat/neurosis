@@ -208,8 +208,5 @@ Render にデプロイされるバックエンドについては、以下の点�
 
 ### 積み残し事項
 
+*   **Apple Developer Program 登録とApp Store Connect設定:** App Storeへのアプリ提出には、Apple Developer Programへの登録と、App Store Connectでのアプリ情報登録、証明書、プロビジョニングプロファイルの設定が必要です。これらが未完了の場合、iOSの提出 (`eas submit`) は失敗します。
 *   **Google Play Console 認証設定:** Google Play Store へのアプリ提出に必要な認証情報 (`GOOGLE_SERVICE_ACCOUNT_KEY`) の設定が未完了です。Google Play Console でのアプリのセットアップ（アプリの作成、基本情報の入力など）が完了次第、サービスアカウントのリンクと権限付与を行い、GitHub Secrets にキーを追加する必要があります。
-
-### 現在の作業
-
-- フロントエンドCDワークフローの改善: `.github/workflows/front-end-mobile-app-cd.yml` と `eas.json` の更新を行う。
