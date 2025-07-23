@@ -35,3 +35,7 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+# build inspect output
+temp-inspect-output/
+json/

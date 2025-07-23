@@ -21,22 +21,12 @@
     "DEFINES_MODULE": "YES"
   },
   "dependencies": {
-    "React-cxxreact": [
-      "0.79.5"
-    ],
-    "React-jsi": [
-      "0.79.5"
-    ],
-    "RCT-Folly": [
-      "2024.11.18.00"
-    ],
+    "React-cxxreact": ["0.79.5"],
+    "React-jsi": ["0.79.5"],
+    "RCT-Folly": ["2024.11.18.00"],
     "DoubleConversion": [],
-    "fast_float": [
-      "6.1.4"
-    ],
-    "fmt": [
-      "11.0.2"
-    ],
+    "fast_float": ["6.1.4"],
+    "fmt": ["11.0.2"],
     "glog": [],
     "React-jsinspector": [],
     "React-jsinspectortracing": []

@@ -23,39 +23,19 @@
   "dependencies": {
     "boost": [],
     "DoubleConversion": [],
-    "fast_float": [
-      "6.1.4"
-    ],
-    "fmt": [
-      "11.0.2"
-    ],
-    "RCT-Folly": [
-      "2024.11.18.00"
-    ],
+    "fast_float": ["6.1.4"],
+    "fmt": ["11.0.2"],
+    "RCT-Folly": ["2024.11.18.00"],
     "glog": [],
     "React-jsinspector": [],
     "React-jsinspectortracing": [],
-    "React-callinvoker": [
-      "0.79.5"
-    ],
-    "React-runtimeexecutor": [
-      "0.79.5"
-    ],
-    "React-perflogger": [
-      "0.79.5"
-    ],
-    "React-jsi": [
-      "0.79.5"
-    ],
-    "React-logger": [
-      "0.79.5"
-    ],
-    "React-debug": [
-      "0.79.5"
-    ],
-    "React-timing": [
-      "0.79.5"
-    ],
+    "React-callinvoker": ["0.79.5"],
+    "React-runtimeexecutor": ["0.79.5"],
+    "React-perflogger": ["0.79.5"],
+    "React-jsi": ["0.79.5"],
+    "React-logger": ["0.79.5"],
+    "React-debug": ["0.79.5"],
+    "React-timing": ["0.79.5"],
     "hermes-engine": []
   },
   "resource_bundles": {
