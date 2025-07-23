@@ -28,7 +28,7 @@ main ブランチへのマージ: ステージング環境へ自動デプロイ�
 
 GitHub Actions Secrets を使用し、API キー、認証情報などの機密情報を安全に管理します。
 
-モバイルアプリのビルド・提出に必要な EAS (Expo Application Services) のシークレットも GitHub Actions Secrets 経由で渡します。
+モバイルアプリのビルド・提出に必要な EAS (Expo Application Services) のシークレットも GitHub Actions Secrets 経経由で渡します。
 
 通知:
 
@@ -209,3 +209,7 @@ Render にデプロイされるバックエンドについては、以下の点�
 ### 積み残し事項
 
 *   **Google Play Console 認証設定:** Google Play Store へのアプリ提出に必要な認証情報 (`GOOGLE_SERVICE_ACCOUNT_KEY`) の設定が未完了です。Google Play Console でのアプリのセットアップ（アプリの作成、基本情報の入力など）が完了次第、サービスアカウントのリンクと権限付与を行い、GitHub Secrets にキーを追加する必要があります。
+
+### 現在の作業
+
+- フロントエンドCDワークフローの改善: `.github/workflows/front-end-mobile-app-cd.yml` と `eas.json` の更新を行う。
