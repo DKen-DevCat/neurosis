@@ -24,9 +24,15 @@
       "edgeToEdgeEnabled": true,
       "package": "com.anonymous.mobileapp"
     },
-      "web": {
+    "web": {
       "favicon": "./assets/favicon.png",
       "bundler": "metro"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ec2fa8da-d0fa-4963-86b1-b80634931988"
+      }
+    },
+    "owner": "dken.azk"
   }
 }

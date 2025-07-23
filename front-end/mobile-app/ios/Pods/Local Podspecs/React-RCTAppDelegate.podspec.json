@@ -26,9 +26,7 @@
   },
   "dependencies": {
     "React-Core": [],
-    "RCT-Folly": [
-      "2024.11.18.00"
-    ],
+    "RCT-Folly": ["2024.11.18.00"],
     "RCTRequired": [],
     "RCTTypeSafety": [],
     "React-RCTNetwork": [],

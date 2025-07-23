@@ -1,0 +1,52 @@
+name: Backend CI
+
+on:
+  push:
+    branches:
+      - develop
+      - main
+    paths:
+      - 'back-end/**'
+  pull_request:
+    branches:
+      - develop
+      - main
+    paths:
+      - 'back-end/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20' # プロジェクトのNode.jsバージョンに合わせて変更
+
+    - name: Cache Node.js modules
+      uses: actions/cache@v4
+      with:
+        path: back-end/node_modules
+        key: ${{ runner.os }}-node-${{ hashFiles('back-end/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - name: Install dependencies
+      run: npm ci
+      working-directory: back-end
+
+    - name: Run lint
+      run: npm run lint
+      working-directory: back-end
+
+    - name: Run tests
+      run: npm test
+      working-directory: back-end
+
+    - name: Run security audit
+      run: npm audit
+      working-directory: back-end

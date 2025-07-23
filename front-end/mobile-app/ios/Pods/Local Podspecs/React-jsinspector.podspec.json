@@ -25,14 +25,10 @@
     "RCT-Folly": [],
     "React-featureflags": [],
     "DoubleConversion": [],
-    "React-runtimeexecutor": [
-      "0.79.5"
-    ],
+    "React-runtimeexecutor": ["0.79.5"],
     "React-jsi": [],
     "React-jsinspectortracing": [],
-    "React-perflogger": [
-      "0.79.5"
-    ],
+    "React-perflogger": ["0.79.5"],
     "hermes-engine": []
   }
 }

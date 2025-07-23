@@ -29,9 +29,7 @@
     "React-featureflags": [],
     "React-timing": [],
     "glog": [],
-    "RCT-Folly": [
-      "2024.11.18.00"
-    ],
+    "RCT-Folly": ["2024.11.18.00"],
     "React-jsi": [],
     "React-performancetimeline": [],
     "React-rendererconsistency": [],

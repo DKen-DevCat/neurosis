@@ -22,9 +22,7 @@
     "React-RCTFabric": [],
     "ReactAppDependencyProvider": [],
     "React-Core": [],
-    "RCT-Folly": [
-      "2024.11.18.00"
-    ],
+    "RCT-Folly": ["2024.11.18.00"],
     "glog": [],
     "ReactCodegen": [],
     "RCTRequired": [],
@@ -60,7 +58,5 @@
   },
   "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
   "source_files": "ios/**/*.{h,m,mm,swift}",
-  "private_header_files": [
-    "ios/**/Swift.h"
-  ]
+  "private_header_files": ["ios/**/Swift.h"]
 }

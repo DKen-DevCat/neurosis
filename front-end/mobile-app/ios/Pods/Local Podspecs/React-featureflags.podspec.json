@@ -21,8 +21,6 @@
     "DEFINES_MODULE": "YES"
   },
   "dependencies": {
-    "RCT-Folly": [
-      "2024.11.18.00"
-    ]
+    "RCT-Folly": ["2024.11.18.00"]
   }
 }

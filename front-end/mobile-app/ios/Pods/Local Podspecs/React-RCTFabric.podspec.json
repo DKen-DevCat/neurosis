@@ -31,9 +31,7 @@
   "dependencies": {
     "React-Core": [],
     "React-RCTImage": [],
-    "RCT-Folly/Fabric": [
-      "2024.11.18.00"
-    ],
+    "RCT-Folly/Fabric": ["2024.11.18.00"],
     "glog": [],
     "Yoga": [],
     "React-RCTText": [],
