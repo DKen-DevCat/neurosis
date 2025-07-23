@@ -67,3 +67,15 @@
 これは自動変更履歴生成 (Changelog generation) に使用される。
 例: feat: implement user login feature
 例: fix(auth): prevent XSS in login form
+
+### CI/CD パイプライン
+
+このプロジェクトでは、GitHub Actions を使用して CI/CD パイプラインを構築しています。
+
+#### バックエンド (`back-end/`)
+- **CI:** Node.js 環境のセットアップ、依存関係のインストール、ESLint によるリンティング、Jest と Supertest によるテスト、`npm audit` によるセキュリティスキャンを実行します。
+- **CD:** Render をデプロイ先として利用し、GitHub リポジトリとの連携により自動デプロイを行います。開発/ステージング環境への自動デプロイ、本番環境への手動承認後のデプロイをサポートします。
+
+#### フロントエンド (`front-end/mobile-app/`)
+- **CI:** Node.js 環境のセットアップ、依存関係のインストール、ESLint (v8.x, `.eslintrc.js` 形式) によるリンティング、TypeScript の型チェック、Jest と React Native Testing Library によるテストを実行します。
+- **CD:** Expo Application Services (EAS) Build & Submit を利用してモバイルアプリのビルドと提出を自動化します。TestFlight/Google Play Beta Program を通じたベータテスト配布、App Store/Google Play Store への提出をサポートします。

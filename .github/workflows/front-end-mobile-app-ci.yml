@@ -39,16 +39,16 @@ jobs:
       run: npm ci
       working-directory: front-end/mobile-app
 
-    - name: Run lint (Placeholder)
-      run: echo "Linting will be configured here."
+    - name: Run lint
+      run: npm run lint
       working-directory: front-end/mobile-app
 
     - name: Run TypeScript type check
-      run: npx tsc --noEmit
+      run: npx tpx tsc --noEmit
       working-directory: front-end/mobile-app
 
-    - name: Run tests (Placeholder)
-      run: echo "Tests will be configured here."
+    - name: Run tests
+      run: npm test
       working-directory: front-end/mobile-app
 
     - name: Install EAS CLI
