@@ -73,9 +73,19 @@
 このプロジェクトでは、GitHub Actions を使用して CI/CD パイプラインを構築しています。
 
 #### バックエンド (`back-end/`)
+
 - **CI:** Node.js 環境のセットアップ、依存関係のインストール、ESLint によるリンティング、Jest と Supertest によるテスト、`npm audit` によるセキュリティスキャンを実行します。
 - **CD:** Render をデプロイ先として利用し、GitHub リポジトリとの連携により自動デプロイを行います。開発/ステージング環境への自動デプロイ、本番環境への手動承認後のデプロイをサポートします。
 
 #### フロントエンド (`front-end/mobile-app/`)
+
 - **CI:** Node.js 環境のセットアップ、依存関係のインストール、ESLint (v8.x, `.eslintrc.js` 形式) によるリンティング、TypeScript の型チェック、Jest と React Native Testing Library によるテストを実行します。
 - **CD:** Expo Application Services (EAS) Build & Submit を利用してモバイルアプリのビルドと提出を自動化します。TestFlight/Google Play Beta Program を通じたベータテスト配布、App Store/Google Play Store への提出をサポートします。
+
+#### 作業管理
+
+- コミットの頻度: 作業が一区切りついたら、その都度コミットしてください。
+- プッシュのタイミング: 作業がまとまって完了したら、忘れずにプッシュしてください。
+- 次作業の確認: 作業を開始する前には、必ず `.gemini/next-to-do.md` を確認し、次の作業内容を把握してください。
+- 次作業の記載: 次の作業が決まったら、必ず `.gemini/next-to-do.md` に記載してください。
+- 作業完了時の更新: 作業が完了したら、必ず `.gemini/next-to-do.md` の該当作業を削除してください。
