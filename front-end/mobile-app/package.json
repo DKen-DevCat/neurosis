@@ -9,11 +9,12 @@
     "web": "expo start --web",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --write .",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky"
   },
   "dependencies": {
     "babel-preset-expo": "~13.0.0",
-    "expo": "~53.0.17", 
+    "expo": "~53.0.17",
     "expo-status-bar": "~2.2.3",
     "nativewind": "^4.1.23",
     "react-native": "0.79.5",
@@ -35,11 +36,19 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-native": "^5.0.0",
+    "husky": "^9.1.7",
     "jest": "^30.0.4",
     "jest-expo": "^53.0.9",
+    "lint-staged": "^16.1.2",
     "react": "19.0.0",
     "react-test-renderer": "^19.0.0",
     "typescript": "^5.8.3"
   },
-  "private": true
+  "private": true,
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
 }
